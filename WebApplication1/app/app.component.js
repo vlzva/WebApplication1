@@ -15,13 +15,12 @@ var AppComponent = (function () {
     }
     AppComponent = __decorate([
         core_1.Component({
-            selector: 'my-app',
-            template: "<app-title [subtitle]=\"subtitle\"></app-title>\n               <nav>\n                <a routerLink=\"contact\" routerLinkActive=\"active\">Contact</a>\n                <a routerLink=\"crisis\"  routerLinkActive=\"active\">Crisis Center</a>\n                <a routerLink=\"heroes\"  routerLinkActive=\"active\">Heroes</a>\n              </nav>\n             <router-outlet></router-outlet>    \n              "
+            selector: 'my-app ',
+            template: "<app-title  [subtitle]=\"subtitle\"></app-title>\n               <h4>Pick a highlight color</h4>\n                <div>\n                  <input type=\"radio\" name=\"colors\" (click)=\"color='lightgreen'\">Green\n                  <input type=\"radio\" name=\"colors\" (click)=\"color='yellow'\">Yellow\n                  <input type=\"radio\" name=\"colors\" (click)=\"color='cyan'\">Cyan\n                </div>\n                <p [myHighlight]=\"color\">Highlight me!</p>\n               <nav >\n                <a routerLink=\"contact\" routerLinkActive=\"active\">Contact</a>\n                <a routerLink=\"crisis\"  routerLinkActive=\"active\">Crisis Center</a>\n                <a routerLink=\"heroes\"  routerLinkActive=\"active\">Heroes</a>\n              </nav>\n             <router-outlet></router-outlet>    \n              "
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
     return AppComponent;
 }());
 exports.AppComponent = AppComponent;
-//<app-contact></app-contact>    //       
 //# sourceMappingURL=app.component.js.map

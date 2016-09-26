@@ -6,6 +6,7 @@ import { AppComponent }   from './app.component';
 import { ContactModule }  from './contact/contact.module';
 import { CoreModule }     from './core/core.module';
 import { routing }        from './app.routing';
+import { HighlightDirective } from './highlight.directive';
 @NgModule({
     imports: [
         BrowserModule,
@@ -13,7 +14,7 @@ import { routing }        from './app.routing';
         CoreModule.forRoot({ userName: 'Miss Marple' }),
         routing
     ],
-    declarations: [AppComponent],
+    declarations: [AppComponent, HighlightDirective],
     bootstrap: [AppComponent]
 })
 export class AppModule { }

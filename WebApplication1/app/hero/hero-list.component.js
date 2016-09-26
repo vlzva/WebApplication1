@@ -19,7 +19,7 @@ var HeroListComponent = (function () {
     };
     HeroListComponent = __decorate([
         core_1.Component({
-            template: "\n    <h3 highlight>Hero List</h3>\n    <div *ngFor='let hero of heroes | async'>\n      <a routerLink=\"{{hero.id}}\">{{hero.id}} - {{hero.name}}</a>\n    </div>\n  "
+            template: "\n    <h3 highlight>Hero List</h3>\n    <div  [style.background]=\"'lime'\"   *ngFor='let hero of heroes | async'>\n      <a routerLink=\"{{hero.id}}\">{{hero.id}} - {{hero.name}}</a>\n    </div>\n  "
         }), 
         __metadata('design:paramtypes', [hero_service_1.HeroService])
     ], HeroListComponent);

@@ -6,7 +6,7 @@ import { Hero,
 @Component({
     template: `
     <h3 highlight>Hero List</h3>
-    <div *ngFor='let hero of heroes | async'>
+    <div  [style.background]="'lime'"   *ngFor='let hero of heroes | async'>
       <a routerLink="{{hero.id}}">{{hero.id}} - {{hero.name}}</a>
     </div>
   `

@@ -16,6 +16,7 @@ var app_component_1 = require('./app.component');
 var contact_module_1 = require('./contact/contact.module');
 var core_module_1 = require('./core/core.module');
 var app_routing_1 = require('./app.routing');
+var highlight_directive_1 = require('./highlight.directive');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -27,7 +28,7 @@ var AppModule = (function () {
                 core_module_1.CoreModule.forRoot({ userName: 'Miss Marple' }),
                 app_routing_1.routing
             ],
-            declarations: [app_component_1.AppComponent],
+            declarations: [app_component_1.AppComponent, highlight_directive_1.HighlightDirective],
             bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])
