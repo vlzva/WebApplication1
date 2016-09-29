@@ -17,7 +17,8 @@
                 <a routerLink="heroes"  routerLinkActive="active">Heroes</a>
               </nav>
              <router-outlet></router-outlet>    
-              `
+              `,
+    styles: [':host {display: block;border: 1px solid black;},h4 { font-weight: bold; } ']
 })
 export class AppComponent {
     subtitle = '(v3)';
